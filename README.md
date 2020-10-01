@@ -1,2 +1,3 @@
-# p56-seminario-profesional
-Material del curso del seminario profesional sobre Node Js + MongoDB
+# Universidad Politecnica Salesiana
+## Seminario Profesional
+Material del seminario profesional sobre Node Js + MongoDB
