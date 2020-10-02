@@ -1,7 +1,6 @@
 const storage = require('./storage')
 
 function addCarrera(nombre, abreviatura, descripcion) {
-    console.log('controller')
     return new Promise( (resolve, reject) => {
         let carrera = {
             nombre: nombre,
@@ -13,10 +12,10 @@ function addCarrera(nombre, abreviatura, descripcion) {
     })
 }
 
-function getCarreras( filtroCarrera ) {
+function getCarreras( filtroCarrera ){
     return new Promise( (resolve, reject) => {
         resolve( storage.get( filtroCarrera ) )
-    } )
+    })
 }
 
 function updateCarrera(idCarrera, nombre, abreviatura, descripcion) {

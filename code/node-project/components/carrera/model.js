@@ -14,4 +14,4 @@ const mySchema = new schema({
 })
 
 const model = mongoose.model( 'Carrera', mySchema)
-module.exports = model 
+module.exports = model

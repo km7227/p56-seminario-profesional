@@ -7,6 +7,15 @@ function hola (nombre, fn_cb) {
     }, 0)
 }
 
+/*
+console.log(`Inicializando conversación...`)
+
+//1ra forma
+hola('Jonathan', function() {
+    console.log(`Finalizando conversación...`)
+
+})
+*/
 
 function hablar( fn_cb ) {
     setTimeout(function (){
@@ -36,7 +45,21 @@ function dialogar(nombre, numVeces) {
 
 console.log(`Inicializando conversación...`)
 
-hola('Gabriela', function(nombre) {
+hola('Jonathan', function(nombre) {
     dialogar(nombre, 4)
     
 })
+
+
+
+
+
+
+/*
+console.log('Inicio...')
+setTimeout(function() {
+    console.log('Hola mundo')
+
+}, 3000)
+console.log('Fin...')
+*/

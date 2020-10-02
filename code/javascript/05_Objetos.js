@@ -1,15 +1,15 @@
 var estudiante = {
-    nombre: 'Gabriela',
-    apellido: 'Farias',
-    trabajo: 'Claro',
-    correo: 'fariasgc@globalhitss.com'
+    nombre: 'Jonathan',
+    apellido: 'Almeida',
+    trabajo: 'UPS',
+    correo: 'asdfg@gmail.com'
 
 }
 var estudiante2 ={
-    nombre: 'Carolina',
-    apellido: 'Olivares',
-    trabajo: 'Claro',
-    correo: 'colivares@globalhitss.com'
+    nombre: 'Gabriel',
+    apellido: 'Ochoa',
+    trabajo: 'Austro',
+    correo: 'gochoa@austro.com'
  
 }
 
@@ -19,7 +19,20 @@ function imprimirNombreMayuscula(objeto){
 }
 
 function imprimirNombreMinuscula(objeto){
-       console.log(`${objeto.nombre.toLowerCase()} ${objeto.apellido}`)
+    var { nombre } = objeto
+    console.log(`${nombre.toLowerCase()} ${objeto.apellido}`)
 }
+
+function imprimirApellidoMayuscula(objeto){
+       console.log(`${objeto.nombre} ${objeto.apellido.toUpperCase()}`)
+}
+
+function imprimirApellidoMinuscula(objeto){
+    console.log(`${objeto.nombre.toLowerCase()} ${objeto.apellido.toLowerCase()}`)
+}
+
+
 imprimirNombreMayuscula(estudiante)
-imprimirNombreMayuscula(estudiante2)
+imprimirNombreMinuscula(estudiante2)
+imprimirApellidoMayuscula(estudiante)
+imprimirApellidoMinuscula(estudiante2)

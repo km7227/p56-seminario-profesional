@@ -14,8 +14,7 @@ const mySchema = new schema({
         type: String,
         required: true,
     },
-       
 })
 
-const model = mongoose.model( 'Estudiante', mySchema)
-module.exports = model 
+const model = mongoose.model( 'Estudiante', mySchema )
+module.exports = model

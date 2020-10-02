@@ -1,7 +1,6 @@
 const storage = require('./storage')
 
 function addDocente(nombre, apellido, correo_electronico) {
-    console.log('controller')
     return new Promise( (resolve, reject) => {
         let docente = {
             nombre: nombre,
@@ -13,10 +12,10 @@ function addDocente(nombre, apellido, correo_electronico) {
     })
 }
 
-function getDocente( filtroDocente ) {
+function getDocentes( filtroDocente ){
     return new Promise( (resolve, reject) => {
         resolve( storage.get( filtroDocente ) )
-    } )
+    })
 }
 
 function updateDocente(idDocente, nombre, apellido, correo_electronico) {
@@ -41,7 +40,7 @@ function deleteDocente(idDocente) {
 
 module.exports = {
     addDocente,
-    getDocente,
+    getDocentes,
     updateDocente,
     deleteDocente,    
 }

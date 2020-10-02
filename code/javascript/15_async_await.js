@@ -26,7 +26,7 @@ async function adios(nombre) {
 }
 
 async function dialogar() {
-    let nombre = await hola( 'Gabriela' )
+    let nombre = await hola( 'Jonathan' )
     await hablar()
     await hablar()
     await hablar()

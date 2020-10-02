@@ -1,15 +1,15 @@
 {
   "name": "javascript",
   "version": "1.0.0",
-  "description": "Conceptos Basicos de JavaScripts",
-  "main": "index.html",
+  "description": "Conceptos basicos de javascript.",
+  "main": "indexhtml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "javascript",
-    "fundamentos"
+    "fundametos"
   ],
-  "author": "Gabriela Farias",
-  "license": "GPL-3.0"
+  "author": "Jonathan Almeida",
+  "license": "MIT"
 }

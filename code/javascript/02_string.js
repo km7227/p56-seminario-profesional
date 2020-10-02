@@ -1,13 +1,19 @@
-var nombre = 'Gabriela'
-var apellido = 'Farias'
+var nombre = "Jonathan"
+var apellido = "Almeida"
 
-var nombreMayusculas = nombre.toUpperCase();
-var apellidaMayuculas = apellido.toUpperCase();
-console.log( nombreMayusculas +' '+ apellidaMayuculas);
-var primeraletraNombre = nombre.chartAt(0);
-var longitudnombre = nombre.length
-var subcadenaNombre = nombre.substr(1, 3);
+//CADENA DE CARACTERES
 
-console.log( primeraletraNombre );
-console.log( longitudnombre );
-console.log( subcadenaNombre );
+var nombre = 'Jonathan', apellido = 'Almeida'
+
+var nombreMayusculas = nombre.toUpperCase()
+var apellidoMayusculas = apellido.toUpperCase()
+
+console.log( nombreMayusculas + ' ' + apellidoMayusculas)
+
+var primeraLetraNombre = nombre.charAt(0)
+var longitudNombre = nombre.length
+var subcadenaNombre = nombre.substr(1, 3)
+
+console.log(primeraLetraNombre)
+console.log(longitudNombre)
+console.log(subcadenaNombre)

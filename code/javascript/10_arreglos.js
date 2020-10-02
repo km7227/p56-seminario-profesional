@@ -1,49 +1,51 @@
-var objeto1={
-    nombre:'Gaby',
-    apellido: 'Farias',
-    altura: '1.64',
-    cantidadLibros: 30, 
+var objeto1 = {
+    nombre: 'Jonathan',
+    apellido: 'Almeida',
+    altura: 170,
+    cantidadLibros: 10,
 }
 
-var objeto2={
-    nombre:'Carolina',
-    apellido: 'Olivares',
-    altura: '1.65',
-    cantidadLibros: 20, 
+var objeto2 = {
+    nombre: 'Carla',
+    apellido: 'Lopez',
+    altura: 170,
+    cantidadLibros: 10,
 }
 
-var objeto3={
-    nombre:'Erika',
-    apellido: 'Orellana',
-    altura: '1.60',
-    cantidadLibros: 40, 
-}
-var objeto4={
-    nombre:'Bella',
-    apellido: 'Espinoza',
-    altura: '1.61',
-    cantidadLibros: 20, 
+var objeto3 = {
+    nombre: 'Rogger',
+    apellido: 'Rubio',
+    altura: 180,
+    cantidadLibros: 20,
 }
 
-var objeto5={
-    nombre:'Douglas',
-    apellido: 'Castro',
-    altura: '1.70',
-    cantidadLibros: 30, 
+var objeto4 = {
+    nombre: 'Miguel',
+    apellido: 'Alvarado',
+    altura: 150,
+    cantidadLibros: 50,
 }
+
+var objeto5 = {
+    nombre: 'Nury',
+    apellido: 'Solis',
+    altura: 160,
+    cantidadLibros: 5,
+}
+
 var personas = [ objeto1, objeto2, objeto3, objeto4, objeto5 ]
 
-//1ra Forma de recorrer arreglo
+// ------ 1ra Forma de recorrer arreglo ------
 for (persona of personas) {
     console.log( `${persona.nombre} ${persona.apellido}` )
 }
 
-//2da Forma de recorrer arreglo
+// ------ 2da Forma de recorrer arreglo ------
 for (var i=0; i<personas.length; i++){
     console.log( ` ${personas[i].nombre} ${personas[i].apellido}`)
 }
 
-//Filtrar con arreglos
+// ------ Filtrar con arreglos ------
 
 const esAlta = (objeto) => objeto.altura >= 1.80
 var personasAltas = personas.filter( esAlta )
@@ -53,7 +55,7 @@ for (persona of personasAltas){
     console.log(`${persona.nombre} ${persona.apellido}`)
 }
 
-//Uso de la funcion map con arreglos (conversión)
+//------ Uso de la funcion map con arreglos (conversión) ------
 //METROS
 const pasarAlturasMetros = (objeto) => {
     objeto.altura = objeto.altura / 100
@@ -61,7 +63,6 @@ const pasarAlturasMetros = (objeto) => {
 }
 
 var personasMetros = personas.map( pasarAlturasMetros )
-
 
 //Otra forma de ejecutar resultado
 //CENTIMETROS
@@ -96,3 +97,4 @@ const contabilizarLibros = (acum, { cantidadLibros }) => acum + cantidadLibros
 
 var totalLibros = personas.reduce( contabilizarLibros, 0 )
 console.log( `La cantidad de libros en total es ${totalLibros}.` )
+
